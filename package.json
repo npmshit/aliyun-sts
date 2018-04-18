@@ -1,31 +1,36 @@
 {
-  "name": "@blueshit/oss-sign",
+  "name": "@blueshit/aliyun-sts",
   "version": "1.0.0",
-  "description": "阿里云OSS签名",
-  "main": "dist/oss.js",
+  "description": "阿里云STS",
+  "main": "dist/sts.js",
   "files": [
-    "dist/oss.js",
-    "dist/oss.d.ts"
+    "dist/sts.js",
+    "dist/sts.d.ts"
   ],
   "typings": "dist/oss.d.ts",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --require ts-node/register src/test.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/npmshit/oss-sign.git"
+    "url": "git+https://github.com/npmshit/aliyun-sts.git"
   },
   "keywords": [
-    "oss"
+    "aliyun",
+    "sts"
   ],
   "author": "Zongmin Lei <leizongmin@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/npmshit/oss-sign/issues"
+    "url": "https://github.com/npmshit/aliyun-sts/issues"
   },
-  "homepage": "https://github.com/npmshit/oss-sign#readme",
+  "homepage": "https://github.com/npmshit/aliyun-sts#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^5.0.0",
     "@types/node": "^9.6.5",
+    "ali-oss": "^5.1.1",
+    "chai": "^4.1.2",
     "mocha": "^5.1.0",
     "prettier": "^1.12.1",
     "ts-node": "^6.0.0",

@@ -1,5 +1,5 @@
 /**
- * 阿里云OSS签名
+ * 阿里云STS
  * 本代码参考自 https://github.com/ali-sdk/ali-oss/blob/master/lib/sts.js
  *
  * @author Zongmin Lei <leizongmin@gmail.com>
@@ -53,9 +53,10 @@ interface HttpResponse extends http.IncomingMessage {
 
 export interface Policy {
   Statement: Array<{
-    Effect: string;
-    Action: string[];
-    Resource: string[];
+    Effect?: string;
+    Action?: string[];
+    Resource?: string[];
+    Condition?: Record<string, any>;
   }>;
   Version: string;
 }
@@ -203,3 +204,5 @@ export class STS {
     return encodeURIComponent(str).replace(/\*/g, "%2A");
   }
 }
+
+export default STS;
