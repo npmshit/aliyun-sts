@@ -1,7 +1,7 @@
 {
   "name": "@blueshit/aliyun-sts",
-  "version": "1.0.2",
-  "description": "阿里云STS",
+  "version": "1.0.3",
+  "description": "轻量级阿里云STS客户端，不依赖任何第三方库，体验飞一般的感觉",
   "main": "dist/sts.js",
   "files": [
     "dist/sts.js",
