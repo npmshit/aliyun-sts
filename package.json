@@ -1,6 +1,6 @@
 {
   "name": "@blueshit/aliyun-sts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "阿里云STS",
   "main": "dist/sts.js",
   "files": [
@@ -9,7 +9,8 @@
   ],
   "typings": "dist/oss.d.ts",
   "scripts": {
-    "test": "mocha --require ts-node/register src/test.ts"
+    "test": "mocha --require ts-node/register src/test.ts",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
